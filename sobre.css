@@ -1,0 +1,156 @@
+/* ===== Reset básico ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #1f2c3d;
+  background-color: #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #1f2c3d;
+  color: #fff;
+  padding: 15px 0;
+}
+
+header .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+header h1 span {
+  color: #facc15; /* amarelo suave */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #f1f5f9;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #facc15;
+}
+
+/* ===== Hero ===== */
+.hero {
+  position: relative;
+  height: 320px;
+  background: url("imagens/banner.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(2px);
+}
+
+.hero-text {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.hero-text h2 {
+  font-size: 1.8rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* ===== Info Section ===== */
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+}
+
+.info-box {
+  max-width: 400px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.info-box h3 {
+  color: #1f2c3d;
+  margin-bottom: 10px;
+}
+
+/* ===== Equipe ===== */
+.team {
+  background-color: #1f2c3d;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.team h3 {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.member {
+  text-align: center;
+}
+
+.member img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid #facc15;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
