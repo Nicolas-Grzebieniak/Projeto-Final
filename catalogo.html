@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="catalogo.css">
-    <title>Catálogo de Livros</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="catalogo.css">
+  <title>Catálogo de Livros</title>
 </head>
 <body>
-    
+
     <header>
 
         <div>
@@ -18,28 +18,20 @@
 
                 <ul>
 
-                    <li><a href="pagina-principal.html">Página Principal</a></li>
-                    <li><a href="catalogo.html">Catálogo de Livros</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                <li><a href="pagina-principal.html">Página Principal</a></li>
+                <li><a href="catalogo.html" class="ativo">Catálogo de Livros</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
 
                 </ul>
 
             </nav>
-
+        
         </div>
 
     </header>
 
     <main>
-
-        <!-- 
-        
-        Todos os livros criados vão ser postos aqui, acho que pode ter 5 tipos: romance, ação, aventura, terror, ficção.
-        Acho que os livros podem ser tratados como se fossem uma classe em java, já que tem o CRUD. 
-        Recomendo que tenha o nome do livro, autor, gênero, ano de publicação, genêro e uma breve descrição. Dá para por com um filtro para cada gênero diferente.
-        É só uma sugestão aquilo em cima. Se der então dá para fazer tipo as coisas aqui de baixo.     
-        -->
 
         <section class="filtros">
 
@@ -47,24 +39,32 @@
 
             <div class="botoes-filtro">
 
-                <button>Todos</button>
-                <button>Romance</button>
-                <button>Ação</button>
-                <button>Aventura</button>
-                <button>Terror</button>
-                <button>Ficção</button>
+                <button data-genero="Todos" class="ativo">Todos</button>
+                <button data-genero="Romance">Romance</button>
+                <button data-genero="Ação">Ação</button>
+                <button data-genero="Aventura">Aventura</button>
+                <button data-genero="Terror">Terror</button>
+                <button data-genero="Ficção">Ficção</button>
 
-            </div>   
+            </div>
+
+        </section>
+
+        <section class="catalogo-livros">
+
+            <div id="listaLivros" class="grid-livros"></div>
+
+        </section>
 
     </main>
 
     <footer>
 
         <p>&copy; 2025 Biblioteca Online, feito por Nicolas Grzebieniak, Grazielle Claus e Guilherme Casagrande de BSI - 2025. Todos os direitos reservados.</p>
-
+        
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="catalogo.js"></script>
 
 </body>
 </html>
